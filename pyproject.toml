@@ -10,3 +10,11 @@ dependencies = [
     "ruff>=0.15.0",
     "typer>=0.21.1",
 ]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true

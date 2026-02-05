@@ -8,7 +8,7 @@ def ask(
     question : Annotated[str, typer.Argument(help="The question to ask to the RAG system")],
     k : Annotated[int, typer.Option(help="The number of documents to retrieve")] = 5,
 
-):
+) -> None:
 
     """
     Ask a question and get an answer with citations
@@ -19,7 +19,7 @@ def ask(
     typer.echo("Ready for retrieval")
 
 @app.command()
-def version():
+def version() -> None:
     """
     Print the version of RouteSage.
     """
